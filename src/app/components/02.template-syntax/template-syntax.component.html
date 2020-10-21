@@ -1,0 +1,21 @@
+<div>
+  <!-- 変数の表示 -->
+  <h1>Hello, {{ name }} !</h1>
+  <!-- v-bind -->
+  <a [href]="link">Click me</a>
+  <ul>
+    <!-- v-for -->
+    <li *ngFor="let item of items">
+      {{ item.title }}
+    </li>
+  </ul>
+  <!-- v-if -->
+  <p *ngIf="isActive">Paragraph</p>
+  <!-- v-if else -->
+  <p *ngIf="isActive; else elseCont">Paragraph1</p>
+  <ng-template #elseCont>
+    <p>Paragraph2</p>
+  </ng-template>
+  <!-- v-show -->
+  <p [hidden]="!isShow">Second paragraph</p>
+</div>
