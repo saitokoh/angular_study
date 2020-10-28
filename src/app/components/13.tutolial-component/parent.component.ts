@@ -22,10 +22,12 @@ import { Component } from '@angular/core';
   template: `
   <div>
     <button (click)="openModal()">モーダルオープン！</button>
+    <!--
     <modal
       [isOpen]="isOpen"
       (close)="closeModal()"
     ></modal>
+    -->
   </div>
 `,
 })
