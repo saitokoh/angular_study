@@ -21,7 +21,19 @@ import { MethodEventAAnswerComponent } from './components/06.tutolial-method-eve
 import { MethodEventBAnswerComponent } from './components/06.tutolial-method-event/b-answer.component'
 import { MethodEventCAnswerComponent } from './components/06.tutolial-method-event/c-answer.component'
 import { MethodEventDAnswerComponent } from './components/06.tutolial-method-event/d-answer.component'
-
+import { MountedComponent } from './components/07.mounted/mounted.component'
+import { ComputedWatchComponent } from './components/08.computed-watch/computed-watch.component'
+import { PropsComponent } from './components/10.props/props.component';
+import { SlotComponent } from './components/11.slot/slot.component';
+import { EmitComponent } from './components/12.emit/emit.component';
+import { MountedWatchAComponent } from './components/09.tutolial-mounted-watch/a.component'
+import { MountedWatchBComponent } from './components/09.tutolial-mounted-watch/b.component'
+import { MountedWatchCComponent } from './components/09.tutolial-mounted-watch/c.component'
+import { MountedWatchAAnswerComponent } from './components/09.tutolial-mounted-watch/a-answer.component'
+import { MountedWatchBAnswerComponent } from './components/09.tutolial-mounted-watch/b-answer.component'
+import { MountedWatchCAnswerComponent } from './components/09.tutolial-mounted-watch/c-answer.component'
+import { ParentAnswerComponent } from './components/13.tutolial-component/answer/parent-answer.component';
+import { ParentComponent } from './components/13.tutolial-component/parent.component';
 
 const routes: Routes = [
   { path: "sample", component: SampleComponent},
@@ -45,6 +57,19 @@ const routes: Routes = [
   { path: "method-event-b-answer", component: MethodEventBAnswerComponent },
   { path: "method-event-c-answer", component: MethodEventCAnswerComponent },
   { path: "method-event-d-answer", component: MethodEventDAnswerComponent },
+  { path: "mounted", component: MountedComponent },
+  { path: "computed-watch", component: ComputedWatchComponent },
+  { path: "mounted-watch-a", component: MountedWatchAComponent },
+  { path: "mounted-watch-b", component: MountedWatchBComponent },
+  { path: "mounted-watch-c", component: MountedWatchCComponent },
+  { path: "mounted-watch-a-answer", component: MountedWatchAAnswerComponent },
+  { path: "mounted-watch-b-answer", component: MountedWatchBAnswerComponent },
+  { path: "mounted-watch-c-answer", component: MountedWatchCAnswerComponent },
+  { path: "props", component: PropsComponent },
+  { path: "slot", component: SlotComponent },
+  { path: "emit", component: EmitComponent },
+  { path: "component-a", component: ParentComponent },
+  { path: "component-a-answer", component: ParentAnswerComponent },
   { path: "", component: SampleComponent}
 ];
 

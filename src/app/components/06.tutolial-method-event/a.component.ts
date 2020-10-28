@@ -6,9 +6,12 @@ import { Component } from '@angular/core';
   selector: 'method-event-a',
   template: `
   <div>
-    <button>ボタン</button>
+    <button (click)="handleClick()">ボタン</button>
   </div>
   `,
 })
 export class MethodEventAComponent {
+  handleClick = () => {
+    alert('くりっく！');
+  }
 }

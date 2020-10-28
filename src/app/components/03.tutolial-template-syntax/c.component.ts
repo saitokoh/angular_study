@@ -7,9 +7,13 @@ import { Component } from '@angular/core';
   selector: 'template-syntax-c',
   template: `
   <div>
-    <p>あたり</p>
+    <p *ngIf="isActive; else elseContent">あたり</p>
+    <ng-template #elseContent>
+      <p>はずれ</p>
+    </ng-template>
   </div>
   `,
 })
 export class TemplateSyntaxCComponent {
+  isActive: boolean = false;
 }

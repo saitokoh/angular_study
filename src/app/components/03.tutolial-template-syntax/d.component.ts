@@ -13,6 +13,13 @@ import { Component } from '@angular/core';
         <th>作品名</th>
       </tr>
     </thead>
+    <tbody>
+      <tr *ngFor="let ghibli of ghiblis">
+        <td>{{ghibli.year}}</td>
+        <td>{{ghibli.month}}</td>
+        <td>{{ghibli.name}}</td>
+      </tr>
+    </tbody>
   </table>
   `,
 })

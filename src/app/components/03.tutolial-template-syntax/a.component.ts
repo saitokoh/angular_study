@@ -7,9 +7,10 @@ import { Component } from '@angular/core';
   selector: 'template-syntax-a',
   template: `
   <div>
-    <h1>Hello, </h1>
+    <h1>Hello, {{name}}</h1>
   </div>
   `,
 })
 export class TemplateSyntaxAComponent {
+  name: string = 'saito.kohei'
 }

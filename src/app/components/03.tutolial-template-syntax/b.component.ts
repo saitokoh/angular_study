@@ -7,9 +7,10 @@ import { Component } from '@angular/core';
   selector: 'template-syntax-b',
   template: `
   <div>
-    <input type='text'/>
+    <input type='text' [value]="name"/>
   </div>
   `,
 })
 export class TemplateSyntaxBComponent {
+  name: string = 'saito.kohei';
 }

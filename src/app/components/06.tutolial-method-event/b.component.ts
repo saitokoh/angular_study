@@ -7,10 +7,14 @@ import { Component } from '@angular/core';
   template: `
   <div>
     <p>カウント：{{count}}</p>
-    <button>ボタン</button>
+    <button (click)="increment()">ボタン</button>
   </div>
   `,
 })
 export class MethodEventBComponent {
   count: number = 0;
+
+  increment = (): void => {
+    this.count++
+  }
 }
